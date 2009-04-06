@@ -10,7 +10,7 @@ On the old Fritz 7 the chess server was fritzserver.de and schach.de port 6002 t
 Here the first authentication will be described with hex code.
 
 Auth (one request):
-First the start bytes
+First the start bytes (the 5f means Guest account)
 
 43 c5 65 5f
 
