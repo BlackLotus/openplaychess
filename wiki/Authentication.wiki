@@ -3,7 +3,7 @@ The pure Authenticating mechanism
 
 = Introduction =
 On the old Fritz 7 the chess server was fritzserver.de and schach.de port 6002 the protocol hasn't changed since then but it's now playchess.com and port 23.
-
+(This is just the quest authentication if you have a username and a password it's a bit different but the same pattern)
 
 = Details =
 
