@@ -65,6 +65,8 @@ Username
 88ff0100
 
 
-= Details =
+= Other information =
 
-Wait a bit. I try to update one wiki page per day.
+42c565f346ba9611b8b6f3b18e35aff63cc4a84550a1ffbf0644ec97
+
+Could be Username 0wn3d by someone else
