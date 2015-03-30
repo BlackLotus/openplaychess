@@ -1,0 +1,61 @@
+The pure Authenticating mechanism
+
+# Introduction #
+On the old Fritz 7 the chess server was fritzserver.de and schach.de port 6002 the protocol hasn't changed since then but it's now playchess.com and port 23.
+(This is just the quest authentication if you have a username and a password it's a bit different but the same pattern)
+
+# Details #
+
+Here the first authentication will be described with hex code.
+
+Auth (one request):
+First the start bytes (the 5f means Guest account)
+
+43 c5 65 5f
+
+After this the server knows that a valid client tries to connect to it.
+
+Then there are 2 maybe random hex values
+
+wx yz
+
+Then there is the old bud d3 he comes every time when you are guest ;)
+
+d3
+
+fallowed by
+
+a6/66/26
+
+not all of them but one of them maybe this is random too.
+Next random string (I always say random but I just don't know what the string means)
+
+xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx xx
+
+everytime the same:
+00 00 00 0a 00 00 00 04 00 00 00 f2 02 00 00 00 04 00 00 00 03 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00 00
+
+random again
+
+wx yz
+
+
+everytime the same
+
+00 00 c2 0f 00 00 73 f9 9a d3 13 00 00 00 01 00 00 00 00 00 00 00 01 00 00 00 08 00 00 00
+
+and now comes the first interesting part in it :P the username
+
+he:xu:se:rn:am:e
+
+The next singnals that the username ends here
+
+c4 ff 01
+
+And the rest is filled with zeros
+
+00:00:00 ....
+
+The username can be 29 "hexchars" long.
+
+I will upload by time a simple auth poc.

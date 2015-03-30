@@ -1,0 +1,1 @@
+A try to reverse engineer the whole playchess.com protocol so you can use it in open source chess games like xboard,eboard or pychess as well.
